@@ -44,7 +44,18 @@ Installation can be done using few simple steps.
 - Rename or copy `.env.example` file to `.env`
 - Run `php artisan key:generate`
 - Run `php artisan migrate`
+- Run `npm install`
+- Run `npm run dev`
 - Set your database credentials in your `.env` file
+
+To create your sites
+- Run `php artisan domain:add site1.local` and add your site to webpack.mix.js to compile color for the domain also create copy `cp resources/sass/default resources/sass/site1`
+- Run `php artisan domain:add site2.local` and add your site to webpack.mix.js to compile color for the domain also create copy `cp resources/sass/default resources/sass/site2`
+- Run `php artisan domain:add site3.local` and add your site to webpack.mix.js to compile color for the domain also create copy `cp resources/sass/default resources/sass/site3`
+
+
+To run site
+- Run `php artisan serve domain=site1.local`
 
 ## Credits
 
